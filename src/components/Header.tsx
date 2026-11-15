@@ -7,7 +7,7 @@ const NAV = [
   { to: '/', label: 'මුල් පිටුව' },
   { to: '/about', label: 'ගුරුවරයා' },
   { to: '/classes', label: 'පන්ති' },
-  { to: '/papers', label: 'පත්‍රිකා' },
+  { to: '/papers', label: 'ප්‍රශ්න පත්‍ර' },
   { to: '/contact', label: 'සම්බන්ධ වන්න' },
 ];
 
@@ -127,7 +127,7 @@ export default function Header() {
             </NavLink>
           ))}
           <NavLink to="/admin" className="mobile-link mobile-link--muted">
-            <span>පරිපාලක පිවිසුම</span>
+            <span>Admin Login</span>
             <Icon name="lock" size={15} />
           </NavLink>
         </nav>
