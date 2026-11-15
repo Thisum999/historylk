@@ -27,7 +27,7 @@ export default function Papers() {
       .catch(() => {
         if (active) {
           setPapers([]);
-          setError('පත්‍රිකා ලබාගැනීමේදී දෝෂයක් සිදු විය. මොහොතකින් නැවත උත්සාහ කරන්න.');
+          setError('ප්‍රශ්න පත්‍ර ලබාගැනීමේදී දෝෂයක් සිදු විය. මොහොතකින් නැවත උත්සාහ කරන්න.');
         }
       });
     return () => {
@@ -69,16 +69,16 @@ export default function Papers() {
   return (
     <>
       <PageHero
-        eyebrow="පත්‍රිකා එකතුව · නොමිලේ"
+        eyebrow="ප්‍රශ්න පත්‍ර එකතුව · නොමිලේ"
         title={
           <>
             පාසල් වාර පරීක්ෂණ <span className="gold-text">ප්‍රශ්න පත්‍ර</span>
           </>
         }
-        sub="පන්තියට එන නොඑන සියලු දෙනාට නොමිලේ බාගත කරගත හැක. ලියාපදිංචියක් අවශ්‍ය නොවේ."
+        sub=" ලියාපදිංචියක් අවශ්‍ය නොවේ."
         aside={
           <div className="hero-aside-card hero-aside-card--papers">
-            <span className="hero-aside-kicker">පත්‍රිකා එකතුව</span>
+            <span className="hero-aside-kicker">ප්‍රශ්න පත්‍ර එකතුව</span>
             <strong>{papers === null ? '—' : papers.length}</strong>
             <span className="hero-aside-note">ප්‍රශ්න පත්‍ර · පිළිතුරු · සටහන්</span>
           </div>
@@ -95,9 +95,9 @@ export default function Papers() {
                 <input
                   type="search"
                   value={query}
-                  placeholder="පත්‍රිකාවේ නම හෝ පාසල..."
+                  placeholder="ප්‍රශ්න පත්‍රයේ නම හෝ පාසල..."
                   onChange={(event) => setQuery(event.target.value)}
-                  aria-label="පත්‍රිකා සොයන්න"
+                  aria-label="ප්‍රශ්න පත්‍ර සොයන්න"
                 />
               </div>
             </div>
@@ -162,7 +162,7 @@ export default function Papers() {
             {hasFilters ? (
               <button type="button" className="text-button" onClick={reset}>
                 <Icon name="x" size={14} />
-                පෙරහන් ඉවත් කරන්න
+                remove the filters
               </button>
             ) : null}
           </div>
@@ -170,7 +170,7 @@ export default function Papers() {
           {hasSample ? (
             <p className="sample-note">
               <Icon name="info" size={16} />
-              මෙහි පෙන්වන සමහර පත්‍රිකා නිදර්ශන පමණි. පරිපාලක පැනලයෙන් ඒවා ඉවත් කර ඔබේ පත්‍රිකා එකතු කරන්න.
+              මෙහි පෙන්වන සමහර ප්‍රශ්න පත්‍ර නිදර්ශන පමණි. remove the sample files and add original files.
             </p>
           ) : null}
 
@@ -200,16 +200,16 @@ export default function Papers() {
           ) : papers.length > 0 ? (
             <div className="papers-empty">
               <Icon name="search" size={28} />
-              <h3>ගැලපෙන පත්‍රිකා නැත</h3>
-              <p>ඔබ තෝරාගත් පෙරහන් වෙනස් කර නැවත උත්සාහ කරන්න.</p>
+              <h3>ගැලපෙන ප්‍රශ්න පත්‍ර නැත</h3>
+              <p>ඔබ තෝරාගත් filters වෙනස් කර නැවත උත්සාහ කරන්න.</p>
               <button type="button" className="btn btn--gold" onClick={reset}>
-                සියලු පත්‍රිකා බලන්න
+                සියලු ප්‍රශ්න පත්‍ර බලන්න
               </button>
             </div>
           ) : (
             <div className="papers-empty">
               <Icon name="fileText" size={28} />
-              <h3>පත්‍රිකා ඉක්මනින්</h3>
+              <h3>ප්‍රශ්න පත්‍ර ඉක්මනින්</h3>
               <p>අලුත් පාසල් වාර ප්‍රශ්න පත්‍ර ඉක්මනින් මෙහි එකතු වේ.</p>
             </div>
           )}
