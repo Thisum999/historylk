@@ -28,7 +28,7 @@ export const WHATSAPP_NUMBER = '94779976090';
  * (Replace these two placeholder values with your real links.)
  */
 export const SOCIAL = {
-  whatsappGroup: 'https://chat.whatsapp.com/REPLACE_WITH_YOUR_GROUP_INVITE',
+  whatsappGroup: 'https://whatsapp.com/channel/0029VbDZQQM72WU5J2rWN41k',
   facebookPage: 'https://www.facebook.com/REPLACE_WITH_YOUR_PAGE',
 };
 
@@ -48,9 +48,9 @@ export const MEDIA = {
   seal: '/media/seal.png',
   schedulePoster: '/media/poster-schedule.jpg',
   posters: [
-    { src: '/media/poster-siras.jpg', label: 'සිරස · පෝද්ද' },
-    { src: '/media/poster-brightway.jpg', label: 'BRIGHTWAY · උළුවිටිකේ' },
-    { src: '/media/poster-sunray.jpg', label: 'SUN RAY · ගාල්ල' },
+    { src: '/media/poster-siras.jpg', label: 'සිරස - පෝද්ද' },
+    { src: '/media/poster-brightway.jpg', label: 'BRIGHTWAY - උළුවිටිකේ' },
+    { src: '/media/poster-sunray.jpg', label: 'SUN RAY - ගාල්ල' },
   ],
 };
 
@@ -203,12 +203,12 @@ export const FEATURES: Feature[] = [
   {
     icon: 'check',
     title: 'කෙටි පරීක්ෂණ හා පුනරීක්ෂණ',
-    body: 'සෑම පාඩමක් අවසානයේ කෙටි පරීක්ෂණයක් සහ පුනරීක්ෂණයක් ලබා දී සිසුන්ගේ දැනුම තහවුරු කිරිම.',
+    body: 'සෑම පාඩමක් අවසානයේ ම කෙටි පරීක්ෂණයක් සහ පුනරීක්ෂණයක් ලබා දී සිසුන්ගේ දැනුම තහවුරු කිරිම.',
   },
   {
     icon: 'users',
     title: 'කුඩා කණ්ඩායම් පන්ති',
-    body: 'සෑම සිසුවෙකුටත් අවධානය ලැබෙන කුඩා කණ්ඩායම් පන්ති සහ අවශ්‍ය අයට තනි පුද්ගල පන්ති පවත්වයි.',
+    body: 'සෑම සිසුවෙකුට ම අවධානය ලැබෙන කුඩා කණ්ඩායම් පන්ති සහ අවශ්‍ය අයට තනි පුද්ගල පන්ති පවත්වයි.',
   },
   {
     icon: 'download',
@@ -232,7 +232,7 @@ export const APPROACH = [
   },
   {
     title: 'සෑම දරුවෙකුටත් අවධානය',
-    body: 'කුඩා කණ්ඩායම් හා තනි පුද්ගල පන්ති හරහා සෑම සිසුවෙකුගේත් දුර්වලතා හඳුනාගෙන අතිරේක සහාය ලබා දීම.',
+    body: 'කුඩා කණ්ඩායම් හා තනි පුද්ගල පන්ති හරහා සෑම සිසුවෙකුගේ ම දුර්වලතා හඳුනාගෙන අතිරේක සහාය ලබා දීම.',
   },
 ];
 
@@ -246,7 +246,7 @@ export const FAQS = [
     a: '6 – 8 ශ්‍රේණි සඳහා සමාජ අධ්‍යයනය යටතේ ඉතිහාසය, භූගෝල විද්‍යාව හා පුරවැසි අධ්‍යාපනය ඉගැන්වේ. නව ප්‍රතිසංස්කරණයට අනුව සකස් වූ පාඩම් සැලසුමක් සමඟ මම එම පන්ති ද පවත්වමි.',
   },
   {
-    q: 'papets ලබා ගැනීමට ගෙවීමක් කළ යුතුද?',
+    q: 'papers ලබා ගැනීමට ගෙවීමක් කළ යුතුද?',
     a: 'නැත. මෙම අඩවියේ "ප්‍රශ්න පත්‍ර" අංශයෙන් පාසල් වාර පරීක්ෂණ ප්‍රශ්න පත්‍ර සම්පූර්ණයෙන්ම නොමිලේ බාගත හැක. ලියාපදිංචියක් අවශ්‍ය නොවේ.',
   },
   {
