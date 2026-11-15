@@ -20,10 +20,10 @@ import { getPapers } from '../lib/api';
 import type { Paper } from '../lib/api';
 
 const STATS = [
-  { value: '6–11', label: 'ඉගැන්වෙන ශ්‍රේණි', hint: 'සාමාන්‍යපෙල දක්වා' },
+  { value: '6–11', label: 'ඉගැන්වෙන ශ්‍රේණි', hint: 'සාමාන්‍ය පෙල දක්වා' },
   { value: '10+', label: 'වසර ඉගැන්වීම්', hint: 'ගුරු සේවය හා ගුරු උපකාරක' },
   { value: 'O/L', label: 'ඉලක්කගත විභාගය', hint: '2027 සාමාන්‍යපෙල' },
-  { value: 'නොමිලේ', label: 'පත්‍රිකා එකතුව', hint: 'සියලු දෙනාට' },
+  { value: 'නොමිලේ', label: 'ප්‍රශ්න පත්‍ර එකතුව', hint: 'සියලු දෙනාට' },
 ];
 
 export default function Home() {
@@ -67,7 +67,7 @@ export default function Home() {
 
             <Reveal delay={80}>
               <h1 className="hero-title">
-                අභිමානවන්ත දේශයක
+                අභිමානවත් දේශයක
                 <br />
                 <span className="gold-text">සාඩම්බර උරුමය</span>
               </h1>
@@ -99,7 +99,7 @@ export default function Home() {
                   <Icon name="arrowRight" size={18} />
                 </Link>
                 <Link className="btn btn--ghost btn--lg" to="/papers">
-                  පත්‍රිකා එකතුව
+                  ප්‍රශ්න පත්‍ර එකතුව
                   <Icon name="download" size={18} />
                 </Link>
               </div>
@@ -136,7 +136,7 @@ export default function Home() {
 
               <div className="float-card float-card--a">
                 <span className="float-icon">
-                  <Icon name="award" size={18} />
+                  <Icon name="award" size={16} />
                 </span>
                 <span className="float-body">
                   <strong>B.A. · PGDE</strong>
@@ -314,7 +314,7 @@ export default function Home() {
                 <span className="notice-date-num">09</span>
                 <span className="notice-date-body">
                   <strong>{BRAND.startDate}</strong>
-                  <small>දින ආරම්භය · දැන්ම ආසනය වෙන්කරවා ගන්න</small>
+                  <small>දින ආරම්භය · දැන්ම සම්බන්ධ වන්න.</small>
                 </span>
               </div>
             </Reveal>
@@ -322,10 +322,10 @@ export default function Home() {
             <Reveal delay={240}>
               <ul className="notice-list">
                 <li>
-                  <Icon name="check" size={16} /> 6 – 8 ශ්‍රේණි · සමාජ අධ්‍යයනය
+                  <Icon name="check" size={16} /> 6 ශ්‍රේණිය · සමාජ අධ්‍යයනය
                 </li>
                 <li>
-                  <Icon name="check" size={16} /> 9 – 11 ශ්‍රේණි · ඉතිහාසය
+                  <Icon name="check" size={16} /> 8 – 11 ශ්‍රේණි · ඉතිහාසය
                 </li>
                 <li>
                   <Icon name="check" size={16} /> තනි පුද්ගල හා කණ්ඩායම් පන්ති
@@ -368,7 +368,7 @@ export default function Home() {
               target="_blank"
               rel="noreferrer"
             >
-              පෝස්ටරය විශාල කර බලන්න
+               විශාල කර බලන්න
               <Icon name="external" size={12} />
             </a>
           </Reveal>
@@ -453,13 +453,13 @@ export default function Home() {
               </Reveal>
               <Reveal delay={120}>
                 <p className="section-sub">
-                  පන්තියට එන නොඑන සියලු දෙනාට නොමිලේ. බාගත කරගෙන පුහුණු වන්න.
+                  නොමිලේ ම download කරගන්න.
                 </p>
               </Reveal>
             </div>
             <Reveal delay={160}>
               <Link to="/papers" className="btn btn--dark">
-                සියලු පත්‍රිකා
+                සියලු ප්‍රශ්න පත්‍ර
                 <Icon name="arrowRight" size={16} />
               </Link>
             </Reveal>
@@ -477,7 +477,7 @@ export default function Home() {
             ) : (
               <div className="papers-empty papers-empty--inline">
                 <Icon name="fileText" size={26} />
-                <h3>පත්‍රිකා ඉක්මනින්</h3>
+                <h3>ප්‍රශ්න පත්‍ර ළඟදීම</h3>
                 <p>අලුත් පාසල් වාර ප්‍රශ්න පත්‍ර ඉක්මනින් මෙහි එකතු වේ.</p>
               </div>
             )}
