@@ -89,7 +89,7 @@ export default function Classes() {
             </Reveal>
             <Reveal delay={70}>
               <h2 className="section-title section-title--light">
-                මධ්‍යස්ථාන <span className="gold-text">4ක්</span> තුළ පන්ති
+                මධ්‍යස්ථාන <span className="gold-text">3ක්</span> තුළ පන්ති
               </h2>
             </Reveal>
             <Reveal delay={130}>
