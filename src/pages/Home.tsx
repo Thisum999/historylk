@@ -172,7 +172,7 @@ export default function Home() {
           <Reveal delay={80}>
             <blockquote className="quote-text">
               ඉතිහාසය මතක තබා ගන්නා දින ලැයිස්තුවක් නොවේ. අප අද ගොඩනඟන රටකට අතීතයෙන් ලැබෙන පාඩමයි.
-              ඒ නිසා මම ඉතිහාසය හඳුන්වන්නේ <span className="gold-text">“අභිමානවන්ත දේශයක සාඩම්බර උරුමය”</span> ලෙසයි.
+              ඒ නිසා මම ඉතිහාසය හඳුන්වන්නේ <span className="gold-text">“අභිමානවත් දේශයක සාඩම්බර උරුමය”</span> ලෙසයි.
             </blockquote>
           </Reveal>
           <Reveal delay={150}>
