@@ -1,0 +1,8 @@
+# Supabase CLI project config.
+# `npx supabase link --project-ref <ref>` overwrites project_id for you.
+project_id = "YOUR-PROJECT-REF"
+
+[functions.api]
+# The browser calls this function without a Supabase JWT; the function does
+# its own admin-token check instead.
+verify_jwt = false

@@ -1,0 +1,9 @@
+node_modules
+dist
+.wrangler
+logs
+media-originals
+*.zip
+.dev.vars
+.env
+.DS_Store
