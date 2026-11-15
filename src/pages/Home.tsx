@@ -134,27 +134,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div classNameat-card--not">
-                <span className="float-icon">
-                  <Icon name="award" size={16} />
-                </span>
-                <span className="float-body">
-                  <strong>B.A. · PGDE</strong>
-                  <small>උසස් අධ්‍යාපන සුදුසුකම්</small>
-                </span>
-              </div>
-
-              <div className="float-card--b">
-                <span className="float-icon">
-                  <Icon name="users" size={18} />
-                </span>
-                <span className="float-body">
-                  <strong>6 – 11 ශ්‍රේණි</strong>
-                  <small>සාමාන්‍යපෙල දක්වා</small>
-                </span>
-              </div>
-            </div>
-          </div>
+              
         </div>
       </section>
 
@@ -443,7 +423,7 @@ export default function Home() {
               <Reveal>
                 <span className="eyebrow">
                   <span className="eyebrow-dot" />
-                  පත්‍රිකා එකතුව
+                  ප්‍රශ්න පත්‍ර එකතුව
                 </span>
               </Reveal>
               <Reveal delay={70}>
