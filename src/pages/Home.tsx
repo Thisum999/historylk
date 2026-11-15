@@ -134,7 +134,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="float-card float-card--not">
+              <div classNameat-card--not">
                 <span className="float-icon">
                   <Icon name="award" size={16} />
                 </span>
@@ -144,7 +144,7 @@ export default function Home() {
                 </span>
               </div>
 
-              <div className="float-card float-card--b">
+              <div className="float-card--b">
                 <span className="float-icon">
                   <Icon name="users" size={18} />
                 </span>
