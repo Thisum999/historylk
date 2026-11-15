@@ -2807,3 +2807,49 @@ h4 {
     animation: none;
   }
 }
+
+/* city chips — home page */
+.center-tab {
+  background: #fff5e6;              /* chip background */
+  border-color: rgba(201, 162, 39, 0.45);
+  color: #4a1230;                   /* centre name colour */
+}
+
+.center-tab small {
+  color: #8a6a52;                   /* city name colour */
+}
+
+.center-tab:hover {
+  background: #ffeacb;
+  border-color: #c9a227;
+}
+
+/* the selected chip */
+.center-tab.is-active {
+  background: linear-gradient(140deg, #7a1c3c, #b0355e);
+  border-color: transparent;
+}
+
+.center-tab.is-active span {
+  color: #fff3d6;
+}
+
+.center-tab.is-active small {
+  color: rgba(255, 243, 214, 0.78);
+}
+
+/* city chips — classes page (dark section) */
+.center-tabs--light .center-tab {
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.28);
+  color: #fff3d6;
+}
+
+.center-tabs--light .center-tab.is-active {
+  background: linear-gradient(140deg, #ffd166, #f0a500);
+  border-color: transparent;
+}
+
+.center-tabs--light .center-tab.is-active span {
+  color: #3a1d05;
+}
