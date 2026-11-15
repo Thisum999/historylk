@@ -127,14 +127,12 @@ export default function Home() {
                   className="portrait-img"
                   loading="eager"
                   fallback={<TeacherPortraitFallback />}
-                />
+               
                 <div className="portrait-caption">
                   <strong>හර්ෂණ නල්ලපෙරුම</strong>
                   <span>ජාතික පාසල් ආචාර්ය · ඉතිහාසය</span>
                 </div>
               </div>
-
-              
         </div>
       </section>
 
