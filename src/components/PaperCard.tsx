@@ -6,7 +6,7 @@ export default function PaperCard({ paper }: { paper: Paper }) {
   return (
     <article className="paper-card">
       <div className="paper-top">
-        <span className="chip chip--type">{TYPES[paper.type] || 'පත්‍රිකාව'}</span>
+        <span className="chip chip--type">{TYPES[paper.type] || 'Paper'}</span>
         <span className="chip chip--grade">{paper.grade} ශ්‍රේණිය</span>
       </div>
 
@@ -19,7 +19,7 @@ export default function PaperCard({ paper }: { paper: Paper }) {
         </span>
         <span>
           <Icon name="fileText" size={14} />
-          {TERMS[paper.term] || 'පත්‍රිකාව'}
+          {TERMS[paper.term] || 'Paper'}
         </span>
         {paper.school ? (
           <span>
@@ -40,7 +40,7 @@ export default function PaperCard({ paper }: { paper: Paper }) {
           {...(paper.hasFile ? {} : { target: '_blank', rel: 'noreferrer' })}
         >
           <Icon name="download" size={15} />
-          බාගන්න
+          Download 
         </a>
       </div>
 
