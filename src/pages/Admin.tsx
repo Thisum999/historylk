@@ -104,7 +104,7 @@ export default function Admin() {
     try {
       setPapers(await getPapers());
     } catch {
-      setStatus({ kind: 'error', text: 'පත්‍රිකා ලබාගැනීමේදී දෝෂයක් සිදු විය.' });
+      setStatus({ kind: 'error', text: 'ප්‍රශ්න පත්‍ර ලබාගැනීමේදී දෝෂයක් සිදු විය.' });
     } finally {
       setLoadingPapers(false);
     }
@@ -238,7 +238,7 @@ export default function Admin() {
     setSaving(true);
     try {
       await createPaper(form);
-      setStatus({ kind: 'ok', text: 'පත්‍රිකාව සාර්ථකව එකතු කරන ලදී.' });
+      setStatus({ kind: 'ok', text: 'paper added successfully.' });
       setTitle('');
       setSchool('');
       setDriveUrl('');
@@ -256,12 +256,12 @@ export default function Admin() {
   };
 
   const handleDelete = async (paper: Paper) => {
-    if (!window.confirm(`"${paper.title}" පත්‍රිකාව ඉවත් කරන්නද?`)) return;
+    if (!window.confirm(`"${paper.title}" Deleth the paper?`)) return;
     setDeleting(paper.id);
     setStatus(null);
     try {
       await removePaper(paper.id);
-      setStatus({ kind: 'ok', text: 'පත්‍රිකාව ඉවත් කරන ලදී.' });
+      setStatus({ kind: 'ok', text: 'Paper deleted successfully.' });
       await loadPapers();
     } catch {
       setStatus({ kind: 'error', text: 'ඉවත් කිරීමේදී දෝෂයක් සිදු විය.' });
@@ -442,7 +442,7 @@ export default function Admin() {
                   ) : null}
 
                   <button type="submit" className="btn btn--gold btn--block btn--lg" disabled={loggingIn}>
-                    {loggingIn ? 'පිවිසෙමින්...' : 'පිවිසෙන්න'}
+                    {loggingIn ? 'login...' : 'login'}
                     <Icon name="arrowRight" size={17} />
                   </button>
                 </form>
@@ -655,11 +655,11 @@ export default function Admin() {
                 {isOwner ? 'ප්‍රධාන පරිපාලක' : 'පරිපාලක'}
               </span>
               <h1>
-                {tab === 'overview' && 'සාරාංශය'}
-                {tab === 'papers' && 'පත්‍රිකා ලැයිස්තුව'}
-                {tab === 'new' && 'නව පත්‍රිකාවක්'}
-                {tab === 'admins' && 'පරිපාලක කළමනාකරණය'}
-                {tab === 'account' && 'මගේ ගිණුම'}
+                {tab === 'overview' && 'Summary'}
+                {tab === 'papers' && 'Papers List'}
+                {tab === 'new' && 'Add Paper'}
+                {tab === 'admins' && 'Manage Admins'}
+                {tab === 'account' && 'My acount'}
               </h1>
               <p className="admin-topbar-sub">
                 ආයුබෝවන්, {session.name} · @{session.username}
@@ -668,11 +668,11 @@ export default function Admin() {
             <div className="admin-topbar-actions">
               <button type="button" className="btn btn--outline btn--sm" onClick={loadPapers}>
                 <Icon name="sparkle" size={15} />
-                යාවත්කාලීන
+                Update
               </button>
               <Link to="/papers" className="btn btn--gold btn--sm">
                 <Icon name="eye" size={15} />
-                පත්‍රිකා පිටුව
+                Paper Page
               </Link>
             </div>
           </header>
@@ -836,7 +836,7 @@ export default function Admin() {
                     value={query}
                     onChange={(event) => setQuery(event.target.value)}
                     placeholder="ශීර්ෂය, පාසල, වර්ෂය අනුව සොයන්න"
-                    aria-label="පත්‍රිකා සොයන්න"
+                    aria-label="ප්‍රශ්න පත්‍ර සොයන්න"
                   />
                   {query ? (
                     <button
@@ -894,7 +894,7 @@ export default function Admin() {
                   <p>
                     {papers.length === 0
                       ? 'තවම පත්‍රිකා නැත. "නව පත්‍රිකාවක්" පිටුවෙන් එකතු කරන්න.'
-                      : 'මෙම සෙවුමට ගැලපෙන පත්‍රිකා නැත.'}
+                      : 'මෙම සෙවුමට ගැලපෙන papers නැත.'}
                   </p>
                 </div>
               ) : (
