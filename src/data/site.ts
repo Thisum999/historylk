@@ -29,7 +29,7 @@ export const WHATSAPP_NUMBER = '94779976090';
  */
 export const SOCIAL = {
   whatsappGroup: 'https://whatsapp.com/channel/0029VbDZQQM72WU5J2rWN41k',
-  facebookPage: 'https://www.facebook.com/REPLACE_WITH_YOUR_PAGE',
+  facebookPage: 'https://www.facebook.com/profile.php?id=61596379029857&mibextid=wwXIfr&mibextid=wwXIfr',
 };
 
 export const COMMUNITY = {
