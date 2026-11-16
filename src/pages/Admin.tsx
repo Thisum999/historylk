@@ -493,7 +493,7 @@ export default function Admin() {
                         value={regPassword}
                         autoComplete="new-password"
                         onChange={(event) => setRegPassword(event.target.value)}
-                        placeholder="characters 6+ (english lessters only)"
+                        placeholder="characters 6+"
                         required
                       />
                     </div>
