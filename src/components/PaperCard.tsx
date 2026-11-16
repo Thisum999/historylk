@@ -32,7 +32,7 @@ export default function PaperCard({ paper }: { paper: Paper }) {
       <div className="paper-actions">
         <a className="btn btn--outline btn--sm" href={paper.link} target="_blank" rel="noreferrer">
           <Icon name="eye" size={15} />
-          බලන්න
+          Preview
         </a>
         <a
           className="btn btn--dark btn--sm"
@@ -44,7 +44,7 @@ export default function PaperCard({ paper }: { paper: Paper }) {
         </a>
       </div>
 
-      {paper.isSample ? <span className="paper-sample">නිදර්ශන</span> : null}
+      {paper.isSample ? <span className="paper-sample">Example</span> : null}
     </article>
   );
 }
