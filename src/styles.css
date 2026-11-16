@@ -3312,7 +3312,7 @@ textarea {
 }
 
 .field-input input::placeholder {
-  color: #e0476f;
+  color: #D3D3D3;
 }
 
 .form-error,
