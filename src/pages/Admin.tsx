@@ -464,7 +464,7 @@ export default function Admin() {
                         type="text"
                         value={regName}
                         onChange={(event) => setRegName(event.target.value)}
-                        placeholder="උදා: කසුන් පෙරේරා"
+                        placeholder="ex: Kasun Perera"
                         required
                       />
                     </div>
