@@ -493,7 +493,7 @@ export default function Admin() {
                         value={regPassword}
                         autoComplete="new-password"
                         onChange={(event) => setRegPassword(event.target.value)}
-                        placeholder="අකුරු 6+"
+                        placeholder="characters 6+ (english lessters only)"
                         required
                       />
                     </div>
@@ -508,7 +508,7 @@ export default function Admin() {
                         value={regConfirm}
                         autoComplete="new-password"
                         onChange={(event) => setRegConfirm(event.target.value)}
-                        placeholder="නැවත ලියන්න"
+                        placeholder= "confirm password"
                         required
                       />
                     </div>
