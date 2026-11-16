@@ -451,7 +451,7 @@ export default function Admin() {
               <>
                 <div className="login-head">
                   <span className="login-kicker">HISTORY · නව ගිණුම</span>
-                  <h1>පරිපාලක ඉල්ලුම</h1>
+                  <h1>Admin Requests</h1>
                   <p>Enter your name, username and password, then send the request.</p>
                 </div>
 
@@ -536,7 +536,7 @@ export default function Admin() {
             <p className="login-foot">
               <Link to="/">
                 <Icon name="arrowLeft" size={14} />
-                අඩවියට ආපසු
+                Back to the site
               </Link>
             </p>
           </div>
@@ -771,7 +771,7 @@ export default function Admin() {
                 <div className="admin-card">
                   <div className="admin-card-head">
                     <h2>
-                      <Icon name="users" size={16} /> පරිපාලක ඉල්ලුම්
+                      <Icon name="users" size={16} /> Admin Requests
                     </h2>
                     {isOwner ? (
                       <button type="button" className="text-button" onClick={() => setTab('admins')}>
@@ -781,7 +781,7 @@ export default function Admin() {
                     ) : null}
                   </div>
                   {!isOwner ? (
-                    <p className="admin-empty-text">ප්‍රධාන පරිපාලකට පමණක් මෙය දිස්වේ.</p>
+                    <p className="admin-empty-text">Only main admin can handle this.</p>
                   ) : pendingAdmins.length === 0 ? (
                     <p className="admin-empty-text">No pending requests.</p>
                   ) : (
